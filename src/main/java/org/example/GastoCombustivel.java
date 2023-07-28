@@ -14,6 +14,5 @@ public class GastoCombustivel {
         double gasolina = distancia / 12;
 
         System.out.println(String.format("%.3f", gasolina));
-
     }
 }
