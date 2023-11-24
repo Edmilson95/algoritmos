@@ -1,4 +1,4 @@
-package org.example.exercicios.iniciante;
+package org.example.exercicios;
 
 public class BubbleSort {
     public static void main(String[] args) {

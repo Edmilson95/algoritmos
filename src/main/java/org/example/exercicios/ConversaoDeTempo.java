@@ -1,4 +1,4 @@
-package org.example.exercicios.iniciante;
+package org.example.exercicios;
 
 import java.sql.Time;
 import java.util.Scanner;

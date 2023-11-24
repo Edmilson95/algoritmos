@@ -1,4 +1,4 @@
-package org.example.exercicios.iniciante;
+package org.example.exercicios;
 
 import java.util.Locale;
 import java.util.Scanner;
