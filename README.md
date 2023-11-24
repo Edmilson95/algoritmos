@@ -1,3 +1,3 @@
-# logica-programacao
+# Algoritmos
 
-Exercícios de lógica de programação usando Java
+Exercícios de algoritmos usando Java
