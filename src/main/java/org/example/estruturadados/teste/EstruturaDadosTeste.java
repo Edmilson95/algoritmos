@@ -8,13 +8,23 @@ public class EstruturaDadosTeste {
 
         Vetor vetor = new Vetor(10);
 
-        vetor.adiciona("elemento 1");
-        vetor.adiciona("elemento 2");
-        vetor.adiciona("elemento 3");
+        vetor.adiciona("B");
+        vetor.adiciona("C");
+        vetor.adiciona("D");
+        vetor.adiciona("E");
+        vetor.adiciona("F");
+        vetor.adiciona("G");
 
-        System.out.println(vetor.tamanho());
         System.out.println(vetor);
-        System.out.println(vetor.busca(1));
+        vetor.adiciona(0, "A");
+        System.out.println(vetor);
+        vetor.adiciona(2, "A");
+        System.out.println(vetor);
+
+//        System.out.println(vetor.tamanho());
+//        System.out.println(vetor);
+//        System.out.println(vetor.busca(1));
+//        System.out.println(vetor.busca("elemento 1"));
 
 
 
