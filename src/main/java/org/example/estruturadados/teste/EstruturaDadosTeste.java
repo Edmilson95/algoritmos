@@ -15,6 +15,14 @@ public class EstruturaDadosTeste {
         vetor.adiciona("F");
         vetor.adiciona("G");
 
+        int posicao = vetor.busca("L");
+        if (posicao > -1){
+            vetor.remove(posicao);
+            System.out.println(vetor);
+        } else {
+            System.out.println("Elemento não existe no vetor");
+        }
+
 
 //        vetor.remove(1);
 //        vetor.adiciona(0, "A");
