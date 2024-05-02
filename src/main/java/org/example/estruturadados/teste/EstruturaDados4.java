@@ -7,20 +7,11 @@ public class EstruturaDados4 {
         ArrayList<String> arrayList = new ArrayList<>();
 
         arrayList.add("A");
+        arrayList.add("B");
         arrayList.add("C");
 
-        System.out.println(arrayList);
 
-        arrayList.add(1, "B");
 
-        System.out.println(arrayList);
-
-        boolean existe = arrayList.contains("A");
-        if (existe){
-            System.out.println("Existe no array");
-        } else{
-            System.out.println("Não existe no array");
-
-        }
+        System.out.println(arrayList.lastIndexOf("C"));
     }
 }

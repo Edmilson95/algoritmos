@@ -104,4 +104,20 @@ public class Lista<T>{
 
         return s.toString();
     }
+
+    public boolean contem(T elemento) {
+
+        return busca(elemento) > -1;
+    }
+
+    public int ultimoIndice(T elemento) {
+        int ultimaPos = -1;
+        for (int i = tamanho-1; i >= 0; i--){
+            if (elementos[i].equals(elemento)){
+                ultimaPos = i;
+            }
+        }
+
+        return ultimaPos;
+    }
 }
