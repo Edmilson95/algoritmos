@@ -52,7 +52,7 @@ public class Lista<T>{
         }
     }
 
-    public Object busca(int posicao) {
+    public T busca(int posicao) {
         if (!(posicao >= 0 && posicao < tamanho)) {
             throw new IllegalArgumentException("Posição inválida");
         }
@@ -125,5 +125,9 @@ public class Lista<T>{
         }
 
         return ultimaPos;
+    }
+
+    public T obtem(int posicao) {
+        return busca(posicao);
     }
 }
