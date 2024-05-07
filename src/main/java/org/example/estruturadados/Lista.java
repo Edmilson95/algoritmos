@@ -130,4 +130,11 @@ public class Lista<T>{
     public T obtem(int posicao) {
         return busca(posicao);
     }
+
+    public void limpar() {
+        for (int i = 0; i < tamanho; i++){
+            elementos[i] = null;
+        }
+        tamanho = 0;
+    }
 }
