@@ -36,7 +36,7 @@ public class Pilha<T> extends EstruturaEstatica<T> {
         return this.elementos[--tamanho];
     }
 
-    private boolean estaVazia() {
+    public boolean estaVazia() {
         return tamanho == 0;
     }
 }
