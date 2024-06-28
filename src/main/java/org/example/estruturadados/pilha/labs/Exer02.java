@@ -15,7 +15,6 @@ public class Exer02 {
             System.out.println("Entre com um número: ");
             int num = scan.nextInt();
 
-
             if (num == 0) {
                 //pilha par
                 Integer desempilhado = par.desempilha();
