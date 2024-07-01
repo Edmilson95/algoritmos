@@ -44,7 +44,7 @@ public class Exer04 {
         livro6.setIsbn("12345");
         livro6.setAnoLancamento(2023);
 
-        System.out.println("Pilha de livros criada, pilha está vazia? " + pilha.empty());
+        System.out.println("Pilha de livros criada, pilha está vazia? " + pilha.isEmpty());
 
         System.out.println("Empilhando livros na pilha");
 
@@ -59,14 +59,14 @@ public class Exer04 {
         System.out.println(pilha.size() + " livros foram empilhados");
         System.out.println(pilha);
 
-        System.out.println("Pilha de livros criada, pilha está vazia? " + pilha.empty());
+        System.out.println("Pilha de livros criada, pilha está vazia? " + pilha.isEmpty());
         System.out.println("Espiando o topo de livros da pilha" + pilha.peek());
 
         System.out.println("Desempilhando livros da pilha: ");
 
-        while (!pilha.empty()){
+        while (!pilha.isEmpty()){
             System.out.println("Desempilhando livro: " + pilha.pop());
         }
-        System.out.println("Todos os livros foram desempilhados, pilha vazia: " + pilha.empty());
+        System.out.println("Todos os livros foram desempilhados, pilha vazia: " + pilha.isEmpty());
     }
 }
