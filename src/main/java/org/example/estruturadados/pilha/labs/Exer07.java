@@ -5,28 +5,31 @@ import java.util.Stack;
 
 public class Exer07 {
     public static void main(String[] args) {
-        imprimeResultado(250);
+        imprimeResultado(255, 16);
     }
 
-    public static void imprimeResultado(int decimal){
-        System.out.println(decimal + " em binário é: "
-                + converteBinario(decimal));
+    public static void imprimeResultado(int numero, int base){
+        System.out.println(numero + " na base "
+                + base + " é: "
+                + converteQlqrBase(numero, base));
     }
-    public static String converteBinario(int decimal){
+    public static String converteQlqrBase(int numero, int base){
         Stack<Integer> pilha = new Stack<>();
-        String binario = "";
+        String numBase = "";
+        String bases = "0123456789ABCDEF";
         int resto;
-        if (decimal == 0){
+
+        if (numero == 0){
             return "0";
         }
-        while (decimal > 0){
-            resto = decimal % 2;
+        while (numero > 0){
+            resto = numero % base;
             pilha.push(resto);
-            decimal = decimal / 2;
+            numero = numero / base;
         }
         while (!pilha.isEmpty()){
-            binario += pilha.pop();
+            numBase += bases.charAt(pilha.pop());
         }
-        return binario;
+        return numBase;
     }
 }
