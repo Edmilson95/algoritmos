@@ -4,6 +4,9 @@ public class FilaComPrioridade<T> extends Fila<T>{
 
     public void enfileira(T elemento){
 
+        //obj1 > obj2 retorna > 0 (1)
+        //obj1 < obj2 retorna < 0 (-1)
+
         Comparable<T> chave = (Comparable<T>) elemento;
 
         int i;

@@ -4,6 +4,7 @@ import org.example.estruturadados.fila.Fila;
 import org.example.estruturadados.fila.FilaComPrioridade;
 
 import java.util.LinkedList;
+import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class FilaTeste2 {
@@ -15,15 +16,13 @@ public class FilaTeste2 {
         fila.enfileira(6);
         fila.enfileira(9);
         fila.enfileira(3);
-        fila.enfileira(11);
-        fila.enfileira(4);
-        fila.enfileira(10);
-        fila.enfileira(2);
-        fila.enfileira(5);
-        fila.enfileira(7);
-        fila.enfileira(8);
 
         System.out.println(fila);
+
+        Queue<Integer> filacomPrioridade = new PriorityQueue<>();
+        filacomPrioridade.add(2);
+        filacomPrioridade.add(1);
+        System.out.println(filacomPrioridade);
 
     }
 }
