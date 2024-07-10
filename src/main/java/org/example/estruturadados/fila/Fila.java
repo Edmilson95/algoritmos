@@ -31,12 +31,14 @@ public class Fila<T> extends EstruturaEstatica<T> {
 
     public T desenfileira(){
         if (this.estaVazia()){
-            throw new IllegalStateException("Fila está vazia");
+            return null;
         }
         T elementoRemovido = elementos[0];
         elementos[0] = null; // limpa o elemento da frente
+        for (int i = 0; i < tamanho-1; i++){
+            elementos[i] = elementos[i+1];
+        }
         tamanho--;
-
         return elementoRemovido;
     }
 

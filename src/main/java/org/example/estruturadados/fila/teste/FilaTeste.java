@@ -10,8 +10,11 @@ public class FilaTeste {
         fila.enfileira(2);
         fila.enfileira(3);
         System.out.println(fila);
+        System.out.println(fila.espiar());
         fila.desenfileira();
         System.out.println(fila);
+        System.out.println(fila.espiar());
+
 
     }
 }
